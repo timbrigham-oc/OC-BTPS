@@ -12,7 +12,7 @@
 RootModule = 'OC-BTPS.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.9.13.0'
+ModuleVersion = '1.9.15.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
