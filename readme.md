@@ -6,7 +6,7 @@ OC-BTPS provides a function for retrieving BeyondTrust Password Safe credentials
 
 ## Installation
 
-This module is available in via powershell gallery. `Install-Module -Name oc-btps -Repository psgallery`
+This module is available in via powershell gallery. `Install-Module -Name PC-BTPS -Repository PSGallery`
 
 ## Usage
 
@@ -33,10 +33,12 @@ Invoke-Command -ScriptBlock $testScriptBlock -Credential $credsProd -ComputerNam
 
 ## Notes
 
-First and foremost, this module expects that your instance of BeyondTrust be 22 or above in order to use the API.
+First and foremost, this module expects that your instance of BeyondTrust be version 22 or above in order to use the API.
 
 This code also will default to retrieving an existing checkout for the same set of credentials if one exists.
 This is to prevent multiple checkouts of the same account; depending on how scripts are written and the number of concurrent checkouts allowed in BeyondTrust this can cause a problem otherwise.
+
+## Finding Username Syntax
 
 Additionally, the name passed here must match the name returned by the ManagedEndpoint API. This can be found in a few ways. I prefer to use the API to get the account name in Postman.
 After authenticating with the API (example method embedded in this module), you can use the following GET request to locate the account name syntax.
