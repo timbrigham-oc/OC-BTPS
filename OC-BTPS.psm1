@@ -45,7 +45,7 @@
     to locate the account name syntax.
     GET https://$apidomain/BeyondTrust/api/public/v3/ManagedAccounts?systemName=ManagedSystemName 
     The 'UserPrincipalName' field in the response, contains 'username@example.com'. This is followed by the 'AccountName' field as a backup.
-    The account name llocated can be validated with the exact username syntax in the AccountName parameter with something like this. 
+    The account name located can be validated with the exact username syntax in the AccountName parameter with something like this. 
     https://$apidomain/BeyondTrust/api/public/v3/ManagedAccounts?systemName=ManagedSystemName&accountName=username@example.com
     You should get back exactly *one* account object. If you get more than one, you need to refine your search.
 #>
